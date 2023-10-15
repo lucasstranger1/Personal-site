@@ -13,7 +13,14 @@
   .user-projects {
     margin: 20px auto;
   }
+  .row{
+    align-items: center;
+    justify-content: center;   
+    padding-bottom: 10px; 
+    color: aliceblue;
+  }
     .img {
+   
       max-width: 100%;
       height: auto;
       border-radius: 5px;

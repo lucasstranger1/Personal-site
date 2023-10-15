@@ -482,7 +482,9 @@ html {
     background-image: var(--section-background-color) !important;
     color: white !important;
   }
-  
+  .img-fluid{
+    border-radius: 50%;
+  }
   .tech-icons {
     font-size: 4.5em !important;
     margin: 15px !important;
