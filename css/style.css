@@ -498,7 +498,7 @@ html {
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
   }
-  
+ 
   @media (max-width: 767px) {
     .tech-icons {
       margin: 10px !important;
