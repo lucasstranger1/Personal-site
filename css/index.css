@@ -1,4 +1,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+/* GitHub contribution graph — isolate from .about-section color:white and fix layout */
+.github-calendar-section {
+  padding-bottom: 2.5rem;
+  max-width: 100%;
+}
+
+.github-calendar-section .calendar {
+  background: #ffffff !important;
+  color: #1f2328 !important;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1.25rem 1.5rem 1.5rem !important;
+  overflow-x: auto;
+  overflow-y: visible;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0;
+}
+
+/* Graph block full width; stats row below in 3 columns */
+.github-calendar-section .calendar > .position-relative {
+  flex: 1 1 100%;
+  width: 100%;
+  min-width: 0;
+}
+
+.github-calendar-section .calendar .ContributionCalendar {
+  height: auto !important;
+  min-height: 8.5rem;
+  overflow: visible !important;
+}
+
+.github-calendar-section .calendar table.ContributionCalendar-grid {
+  border-collapse: separate !important;
+  border-spacing: 3px !important;
+  margin: 0 auto;
+}
+
+.github-calendar-section .calendar table.ContributionCalendar-grid tbody tr {
+  height: auto !important;
+}
+
+.github-calendar-section .calendar td.ContributionCalendar-day {
+  min-width: 11px !important;
+  width: 11px !important;
+  min-height: 11px !important;
+  height: 11px !important;
+  padding: 0 !important;
+  box-sizing: content-box !important;
+  border-radius: 2px;
+}
+
+.github-calendar-section .calendar td.ContributionCalendar-label {
+  color: #656d76 !important;
+  font-size: 10px !important;
+  vertical-align: bottom !important;
+}
+
+.github-calendar-section .calendar .show-on-focus {
+  color: #0969da !important;
+}
+
+.github-calendar-section .calendar .Link--muted,
+.github-calendar-section .calendar .color-fg-muted {
+  color: #656d76 !important;
+}
+
+.github-calendar-section .calendar a.Link--muted {
+  color: #0969da !important;
+}
+
+.github-calendar-section .calendar .contrib-column {
+  flex: 1 1 180px;
+  min-width: 160px;
+  display: block !important;
+  width: auto !important;
+  padding: 14px 12px !important;
+  text-align: center !important;
+  border: 1px solid #d0d7de !important;
+  border-radius: 8px;
+  margin: 12px 6px 0 0 !important;
+  background: #f6f8fa !important;
+  color: #1f2328 !important;
+  font-size: 12px !important;
+  box-sizing: border-box !important;
+}
+
+.github-calendar-section .calendar .contrib-column .text-muted {
+  color: #656d76 !important;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.github-calendar-section .calendar .contrib-column .contrib-number {
+  color: #1f2328 !important;
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  margin: 6px 0 !important;
+}
+
+.github-calendar-section .calendar .width-full.f6 {
+  flex: 1 1 100%;
+  width: 100%;
+  clear: both;
+  padding: 10px 0 4px !important;
+  overflow: auto;
+}
+
+/* github-calendar-responsive.css hides .float-left here; keep "Learn how we count" visible */
+.github-calendar-section .calendar .width-full > .float-left {
+  display: inline-block !important;
+}
+
+.github-calendar-section .calendar .float-left,
+.github-calendar-section .calendar .float-right {
+  float: none !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: 900px) {
+  .github-calendar-section .calendar .contrib-column {
+    flex: 1 1 0;
+    margin-top: 16px !important;
+  }
+}
+
 body {
     margin: 0;
     font-family: "Raleway", serif !important;

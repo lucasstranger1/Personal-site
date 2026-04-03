@@ -1,186 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="manifest" href="manifest.json" />
-  <title>Lucas | Portfolio</title>
-  <meta name="description" content="Personal website of Aniket Kumar">
-
-  <!-- Google / Search Engine Tags -->
-  <!-- <meta itemprop="name" content="Aniket | Portfolio">
-  <meta itemprop="description" content="Personal website of Aniket Kumar">
-  <meta itemprop="image"
-    content=""> -->
-
-  <!-- Facebook Meta Tags -->
-  <!-- <meta property="og:url" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Aniket | Portfolio">
-  <meta property="og:description" content="Personal website of Aniket Kumar">
-  <meta property="og:image"
-    content=""> -->
-  
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+  <meta name="theme-color" content="#070b14" />
+  <meta name="description" content="Lucas Yao — M.S. Data Science at NYU. Machine learning, statistics, and full-stack data projects." />
+  <title>Lucas Yao · Data Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/portfolio.css" />
 </head>
-
 <body>
-  <nav class="container navbar sticky sticky-top navbar-expand-xl">
-    <a class="navbar-brand" href="#">Lucas' Personal Site</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler span"></span>
-    </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item-active"><a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html"><i class="far fa-user"></i> About</a></li>
-      <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fab fa-codepen"></i> Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="resume.html"><i class="far fa-file-alt"></i> Resume</a> </li>
-      <li class="nav-item"><a class="nav-link fork-btn" href="https://github.com/lucasstranger1/Personal-site"><i class="fas fa-code-branch"></i><i class="far fa-star"></i></a> </li>
-    </ul>
-  </div>
-  </nav>
-  <section>
-    <div class="container-fluid home-section" id="home">
-      <Particle />
-      <div class="container home-content">
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="home-header col-md-7">
-            <h1 style="padding-bottom: 10; color: white;" class="heading">
-              Hi There! <span class="wave">👋</span>
-            </h1>
-            <h3 class="heading" style="color: wheat;"><script language = "javascript" src="js/greet.js">
-            </script></h3>
-            <h1 class="heading-name" style="color: aliceblue;">
-              I'M
-              <strong class="main-name"> Lucas Yao</strong>
-            </h1>
-            <div style="text-align: left; padding: 50;">
-              <h2 class="heading Typewriter__wrapper"><script language = "javascript"  src="js/typewriter.js">
-              </script> </h2>
-              <br><br><br>
-            </div>
-          </div>
-          <div class="col-md-4" style="padding-bottom: 20">
-            <img src="img/ProfilePhotoLu.jpeg" alt="home pic" class="img-fluid" />
-          </div>
-        </div>
-        <br>
-      </div>
-    </div>
-    <div class="Container-fluid home-about-section" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 home-about-description">
-            <h1 style="font-Size: 2.6em; color: white;">
-              LET ME <span class="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p class="home-about-body">
-              I fell in love with programming and data science for data analytics and Machine Learning.
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b class="purple"> Python,C++ and I am learning data analysis and data virtualization for my data science and machine learning projects  </b>
-              </i>
-              <br />
-              <br />
-              My current focus is on &nbsp;
-              <i>
-                <b class="purple">
-                  Machine learning, and data science
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion with
-              <i>
-                <b class="purple"> Python for data analytics</b>
-              </i>
-              like
-              <i>
-                <b class="purple"> Data analysis, want to see more about the project? <a class="Project-Link" href="projects.html" target="_blank"><i class="fab fa-codepen"></i>Check here</a> </b>
-              </i>
-            </p>
-          </div>
-          <div class="col-md-4 myAvtar">
-            <Tilt>
-              <img src="img/profile.jpg" class="img-fluid" alt="Profile Picture" />
-            </Tilt>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 home-about-social">
-            <h1 style="color: white;">FIND ME ON</h1>
-            <p>
-              Feel free to <span class="purple">connect </span>with me
-            </p>
-            <ul class="home-about-social-links">
-              <li class="social-icons">
-                <a
-                href="https://github.com/lucasstranger1"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="icon-colour  home-social-icons"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              
-              <li class="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/lucas-yao001/"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="icon-colour  home-social-icons"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <!-- <li class="social-icons">
-                <a
-                  href="https://t.me/crypticani"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="icon-colour home-social-icons"
-                >
-                  <i class="fab fa-telegram"></i>
-                </a>
-              </li> -->
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="container-fluid footer">
-    <div class="row">
-      <div class="col-md-4 footer-copywright">
-      </div>
-      <div class="col-md-4 footer-copywright">
-        <h3>Coded with <i class="fa fa-heart"></i> by <a
-            href="https://github.com/lucasstranger1"
-              style="color: white">Lucas Yao</a></h3>
-        </div>
-      </div>
-    </div>
-</body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">Lucas Yao <span>·</span> Data Science</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+      <nav id="site-nav" class="nav-desktop" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#path">Path</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn-header" href="files/Lucas_Resume.pdf" target="_blank" rel="noreferrer">Résumé PDF</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div>
+        <p class="section-label" style="margin-bottom: 0.5rem;">Portfolio</p>
+        <h1>Models, experiments, and systems built on real data.</h1>
+        <p class="hero-lead">
+          M.S. Data Science student at NYU. I work at the intersection of statistics, machine learning, and engineering—benchmarks, inference, and full-stack tools.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="files/Lucas_Resume.pdf" target="_blank" rel="noreferrer">Download résumé</a>
+          <a class="btn-ghost" href="https://github.com/lucasstranger1" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn-ghost" href="https://www.linkedin.com/in/lucas-yao001/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+        <div class="stat-row">
+          <div class="stat-card reveal">
+            <p class="k">Graduate</p>
+            <p class="v">NYU · Data Science</p>
+          </div>
+          <div class="stat-card reveal">
+            <p class="k">Expected</p>
+            <p class="v">May 2027</p>
+          </div>
+          <div class="stat-card reveal">
+            <p class="k">Undergraduate</p>
+            <p class="v">John Jay · CS &amp; Security</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-viz reveal" aria-hidden="true">
+        <svg viewBox="0 0 320 120" role="img" aria-label="">
+          <defs>
+            <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.5" />
+              <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <path class="spark-fill" d="M 8 95 L 8 78 L 52 82 L 96 48 L 140 62 L 184 28 L 228 44 L 272 18 L 312 32 L 312 95 Z" />
+          <path class="spark-line" d="M 8 78 L 52 82 L 96 48 L 140 62 L 184 28 L 228 44 L 272 18 L 312 32" />
+          <g fill="#8b9bb8" font-family="JetBrains Mono, monospace" font-size="9">
+            <text x="8" y="112">t</text>
+            <text x="100" y="112">feature</text>
+            <text x="220" y="112">signal</text>
+          </g>
+        </svg>
+        <p class="hero-viz-caption">Synthetic series — this site is the dashboard.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about-grid">
+      <div>
+        <p class="section-label">About</p>
+        <h2>Brooklyn-based · curious about small data &amp; big models</h2>
+        <div class="about-text">
+          <p>
+            I am an M.S. Data Science student at <strong style="color: var(--text);">New York University</strong> (expected May 2027) with a B.S. in Computer Science &amp; Information Security and a mathematics minor from <strong style="color: var(--text);">John Jay College (CUNY)</strong>, May 2025.
+          </p>
+          <p>
+            Recent work includes a multimodal benchmark (MathLABS), large-scale survey analytics (RateMyProfessor), and full-stack apps with Streamlit and Django. Outside the terminal: volleyball, pickleball, and trails.
+          </p>
+        </div>
+      </div>
+      <div class="avatar-wrap reveal">
+        <img src="img/aboutme.png" alt="Lucas Yao" />
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section-label">Stack</p>
+      <h2>Tools I reach for</h2>
+      <p class="projects-intro">Ordered for how I actually build: from raw tables to deployed interfaces.</p>
+      <div class="skill-cloud reveal">
+        <span class="skill-pill"><strong>Python</strong> · pandas · scikit-learn</span>
+        <span class="skill-pill"><strong>Stats</strong> · hypothesis tests · regression</span>
+        <span class="skill-pill"><strong>ML</strong> · classification · evaluation</span>
+        <span class="skill-pill"><strong>SQL</strong> · MySQL · SQLite</span>
+        <span class="skill-pill"><strong>MongoDB</strong> · JSON pipelines</span>
+        <span class="skill-pill"><strong>APIs</strong> · REST · model routers</span>
+        <span class="skill-pill"><strong>Streamlit</strong> · quick UIs</span>
+        <span class="skill-pill"><strong>Django</strong> · web backends</span>
+        <span class="skill-pill"><strong>C++</strong> · structures &amp; algorithms</span>
+        <span class="skill-pill"><strong>Git</strong> · Linux · VS Code</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section-label">Projects</p>
+      <h2>Selected work</h2>
+      <p class="projects-intro">Research-style benchmarks, applied statistics, and shipping products. Each card links out to code, a live app, or a written report.</p>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <h3>MathLABS</h3>
+          <p class="project-meta">Small data · MLLM benchmark · Fall 2025</p>
+          <p>400+ visual discrete-math items, MongoDB + Hugging Face pipeline, hybrid evaluator with Gemini and OpenRouter—nine VLMs on math MCQs.</p>
+          <div class="project-links">
+            <a href="files/MathLABS_Final_Report.pdf" target="_blank" rel="noreferrer">Final report</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>RateMyProfessor Analytics</h3>
+          <p class="project-meta">IDS capstone · 18k+ ratings</p>
+          <p>Welch’s t-tests on gender vs. difficulty, logistic regression on “hotness” (AUROC 0.80), 26+ feature drivers.</p>
+          <div class="project-links">
+            <a href="files/RateMyProfessor_Analytics_Final_Report.pdf" target="_blank" rel="noreferrer">Final report</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>PlantID Care Companion</h3>
+          <p class="project-meta">Streamlit · PlantNet · LLM chat</p>
+          <p>Species ID from photos, fuzzy-matched care guides, character-driven plant chat.</p>
+          <div class="project-links">
+            <a href="https://github.com/lucasstranger1/streamlit_CTP" target="_blank" rel="noreferrer">Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>NLP · Phishing &amp; spam</h3>
+          <p class="project-meta">Streamlit · ML · capstone</p>
+          <p>Content-level classification beyond brittle keyword rules.</p>
+          <div class="project-links">
+            <a href="https://phishingemaildetection-aecdxumf52qcuwtcvgzjn5.streamlit.app/" target="_blank" rel="noreferrer">Live app</a>
+            <a href="img/CSCI_401_Poster.pdf" target="_blank" rel="noreferrer">Poster</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>BMCConnect</h3>
+          <p class="project-meta">Django · curriculum &amp; chat · BMCC TLC</p>
+          <p>Search, live support, and analytics for ~1,500 CIS students.</p>
+          <div class="project-links">
+            <a href="https://lucasyao111.pythonanywhere.com/" target="_blank" rel="noreferrer">Live site</a>
+            <a href="https://lucasstranger1.github.io/BMCCintership/index.html#" target="_blank" rel="noreferrer">Static demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>Emotionfy</h3>
+          <p class="project-meta">React · Flask · Spotify API</p>
+          <p>Facial emotion cues mapped to playlist recommendations.</p>
+          <div class="project-links">
+            <a href="https://github.com/walletkun/Emotionfy" target="_blank" rel="noreferrer">Repository</a>
+          </div>
+        </article>
+      </div>
+      <p class="projects-intro" style="margin-top: 2rem; margin-bottom: 0;">
+        <a href="projects.html">Coursework &amp; lab archive →</a> — cryptography write-ups, Qt project, bookstore demo, chatbot repo.
+      </p>
+    </section>
+
+    <section id="path">
+      <p class="section-label">Path</p>
+      <h2>Education &amp; experience</h2>
+      <div class="timeline">
+        <div class="timeline-col reveal">
+          <h3>Education</h3>
+          <div class="timeline-item">
+            <h4>M.S. Data Science · NYU</h4>
+            <p class="when">New York, NY · expected May 2027</p>
+            <p>Coursework: intro DS, optimization &amp; linear algebra, learning from small data, ML, big data, advanced Python.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>B.S. CS &amp; Information Security · John Jay (CUNY)</h4>
+            <p class="when">Minor in Mathematics · May 2025</p>
+            <p>OOP (C++), data structures &amp; algorithms, probability &amp; statistics.</p>
+          </div>
+        </div>
+        <div class="timeline-col reveal">
+          <h3>Experience &amp; programs</h3>
+          <div class="timeline-item">
+            <h4>College Assistant · BMCC</h4>
+            <p class="when">Sep 2023 – Dec 2023</p>
+            <p>CS 101 lectures and tutoring for 20 students.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Technology Learning Community Intern · BMCC</h4>
+            <p class="when">May 2023 – Jul 2023</p>
+            <p>Curriculum search, chat, and dashboards for CIS students.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>CodePath · Apprenticeship</h4>
+            <p class="when">Jun 2025 – Aug 2025</p>
+            <p>Web dev &amp; technical interview prep tracks.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>CUNY Tech Prep · Data Science Fellow</h4>
+            <p class="when">Jul 2024 – May 2025</p>
+            <p>EDA through ML with Python, Jupyter, pandas, TensorFlow, scikit-learn.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>JJAY CS Society · Web developer</h4>
+            <p class="when">Sep 2024 – May 2025</p>
+            <p>Maintained club site at <a href="https://jjaycss.tech/" target="_blank" rel="noreferrer">jjaycss.tech</a>.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Certifications</h4>
+            <p class="when">Coursera</p>
+            <p>
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/SWGBH9NUS48N" target="_blank" rel="noreferrer">Google Data Analytics</a>
+              ·
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/2QSR4CXUVVRH" target="_blank" rel="noreferrer">Databases for Data Scientists</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section-label">Contact</p>
+      <h2>Let’s talk data</h2>
+      <div class="contact-block reveal">
+        <p>Email, GitHub, or LinkedIn—best for collaborations, internships, or swapping project ideas.</p>
+        <div class="social-row">
+          <a href="mailto:lucasyao111@gmail.com">lucasyao111@gmail.com</a>
+          <a href="https://github.com/lucasstranger1" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/lucas-yao001/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="files/Lucas_Resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Lucas Yao · Built as a static portfolio · <a href="https://github.com/lucasstranger1/Personal-site" target="_blank" rel="noreferrer">Source</a></p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/portfolio.js"></script>
+</body>
 </html>

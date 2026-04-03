@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
-    var dataText = ["Data analyst / Machine Learning Engineer",
+    var dataText = ["Data Science Graduate Student",
+    "Data Analyst / ML Engineer",
     "Pickleball Player",
-    "Enthusiastic Leaner",
     "Open Source Contributor",];
     
     // type one text in the typwriter
@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded',function(event){
           setTimeout(function() {
             StartTextAnimation(0);
           }, 200);
+          return;
        }
-       // check if dataText[i] exists
-      if (i < dataText[i].length) {
+      if (i < dataText.length) {
         // text exists! start typewriter animation
        typeWriter(dataText[i], 0, function(){
          // after callback (and whole text has been animated), start next text

@@ -1,295 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="manifest" href="manifest.json" />
-  <title>Lucas | Portfolio</title>
-  <meta name="description" content="Personal website of Aniket Kumar">
-  
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/projects.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+  <meta name="description" content="Additional coursework and labs — Lucas Yao" />
+  <title>More work · Lucas Yao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <style>
+    .more-list { max-width: 720px; margin: 0 auto; }
+    .more-item {
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 0;
+    }
+    .more-item:last-child { border-bottom: none; }
+    .more-item h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+    .more-item p { margin: 0 0 0.65rem; font-size: 0.92rem; color: var(--text-muted); }
+    .more-item .project-links { margin: 0; }
+    .back-row { margin-bottom: 2rem; }
+    .back-row a { font-family: var(--font-mono); font-size: 0.85rem; }
+  </style>
 </head>
-
 <body>
-  <nav class="container navbar sticky sticky-top navbar-expand-xl">
-    <a class="navbar-brand" href="#">Lucas' Personal Site</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler span"></span>
-    </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html"><i class="far fa-user"></i> About</a></li>
-      <li class="nav-item-active"><a class="nav-link" href="#"><i class="fab fa-codepen"></i> Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="resume.html"><i class="far fa-file-alt"></i> Resume</a> </li>
-      <li class="nav-item"><a class="nav-link fork-btn" href="https://github.com/lucasstranger1/Personal-site"><i class="fas fa-code-branch"></i><i class="far fa-star"></i></a> </li>
-    </ul>
-  </div>
-  </nav>
-  <section>
-    <div class="container-fluid project-section">
-    
-        <div class="container">
-          <h1 class="project-heading" style="text-align: center;">
-            My  <strong class="purple">Projects </strong>
-          </h1>
-          <p style="color: white; text-align: center;">
-            Here are a few projects I've worked on.
-          </p>
-          <div class="row">
-            <div class="user-projects row">
-              <div class="col-md-2"></div>
-          <div class="col-md-4">
-            <h3 class="purple"> NLP for Phishing and Spam Email Detection </h3>
-            <ul>
-              <li style="color: aliceblue;"> Python, Machine Learning, Streamlit</li>
-                </li>  
-            </ul>
-            <p> Phishing attacks have grown increasingly sophisticated, exploiting psychological manipulation and contextual deception to evade
-              detection. Despite advancements in email filtering technologies, many systems still rely on rule-based approaches (e.g., blacklisted
-              domains, keyword matching), which fail to capture the nuanced linguistic patterns characteristic of phishing. This project addresses this
-              gap by applying NLP and ML techniques to analyze email content at a deeper level, enabling more accurate and dynamic classification.</p>
-            <a class="project-link" href="https://phishingemaildetection-aecdxumf52qcuwtcvgzjn5.streamlit.app/"target=_blank>Check it out</a>
-            <a class="project-link" href="img/CSCI_401_Poster.pdf"target=_blank>Capstone Project Poster</a>
-          </div>
-          <div class="col-md-4">
-            <img alt="Project" src="img/NLP_project1.png">
-            <img alt="Project" src="img/NLP_project2.png">
-          </div>
-        </div>
-            <div class="user-projects row">
-              <div class="col-md-2"></div>
-              <div class="col-md-4">
-                <img alt="Project" src="img/Plant_project1.png">
-                <img alt="Project" src="img/Plant_project2.png">
-                <img alt="Project" src="img/Plant_project3.png">
-              </div>
-              <div class="col-md-4">
-                
-                  <h3 class="purple">  Plant Buddy (Smart Plant Identifier + Care Companion) </h3>
-                  <ul>
-                    <li style="color: aliceblue;"> python, PlantNet API, Gemini API, Streamlit</li>
-                      </li>  
-                  </ul>
-                  <p> • a Streamlit web app that identifies plants using the PlantNet API and provides personalized care instructions, complete with personality traits for each plant. It now also supports playful interaction with your plant using an LLM!
-                  </p>
-                 
-                   <li style="color: aliceblue;">
-                    Collaborating in a team of 4 and building a full-stack plant identification tool using Python, Streamlit, and
-                    PlantNet API, enabling accurate species recognition from user-uploaded images.</li>
-                    <li style="color: aliceblue;">Engineering a fuzzy-matching system linking plant IDs to care guides with personality profiles and traits,
-                    enhancing instruction relevance by 65%.</li>
-                  <li style="color: aliceblue;">  Integrating LLM-based chat, allowing users to “talk” to their plants through personalized, character-driven
-                    interactions.</li>
-                 
-                  <a class="project-link" href="https://github.com/lucasstranger1/streamlit_CTP"target=_blank>Check it out</a>
-                </div>
-                <br>
-                
-              </div>
-                <div class="user-projects row">
-                  <div class="col-md-2"></div>
-              <div class="col-md-4">
-                <h3 class="purple"> Emotionfy </h3>
-                <ul>
-                  <li style="color: aliceblue;"> python, react, flask, spotify API</li>
-                    </li>  
-                </ul>
-                <p> •Emotionfy is a cutting-edge system that merges the power of emotion detection with personalized music recommendations. Using deep learning for facial emotion recognition and Spotify’s API, this application recommends playlists tailored to the user’s emotional state. Upload an image, and Emotionfy will do the rest — analyzing your emotion and curating a playlist to match your mood.</p>
-                <a class="project-link" href="https://github.com/walletkun/Emotionfy"target=_blank>Check it out</a>
-              </div>
-              <div class="col-md-4">
-                <img alt="Project" src="img/Emotionfy_landingpage.png">
-                <img alt="Project" src="img/Emotionfy_demo.png">
-              </div>
-            </div>
-            <br>
-            <div class="user-projects row">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                  <img alt="Project" src="img/BMCCintershipproject1.png">
-                  <img alt="Project" src="img/BMCCintershipproject2.png">
-                </div>
-                <div class="col-md-4">
-                  <h3 class="purple"> BMCConnect </h3>
-                  <ul>
-                    <li style="color: aliceblue;"> Python, Django, JavaScript, CSS, Html, IBM Chatbot</li>  
-                  </ul>
-                  <p> A Website Development Project: Curriculum Search Site for Computer Science Students
-                    • Developed a curriculum search website using PHP, CSS, HTML, JavaScript, and SQL for better
-                    assisting students&apos; academic life in their freshman year in college.
-                    • Created a user-friendly interface to assist computer science students in selecting appropriate courses
-                    throughout semester, avoiding unnecessary trouble, and preparing for their career readiness.</p>
-                  <a class="project-link" href="https://lucasstranger1.github.io/BMCCintership/index.html#"target=_blank>Check it out</a>
-                </div>
-              </div>
-              <br>
-              <div class="user-projects row">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                  <h3 class="purple"> BMCC Tutoring Website </h3>
-                  <ul>
-                    <li style="color: aliceblue;"> Course work  CSC211 ( c++ Advanced Programming Techniques)</li>
-                  </ul>
-                  <p>QT Framework Project: Tutor Matching and Self-Learning Application for Minority Group Students
-                    • Built a QT application using C++ with a UI interface to facilitate tutor matching and self-learning for
-                    students to escalate students study passion in the STEM majors.</p>
-                  <a class="project-link" href="https://sites.google.com/view/csc211honorproject?usp=sharing" target=_blank>Check it out</a>
-                </div>
-                <div class="col-md-4">
-                    <img alt="himmat" src="img/Project211.jpg">
-                  </div>
-              </div>    
-              <div class="user-projects row">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                  <img alt="Project" src="img/homepagePicture2.png">
-                </div>
-                <div class="col-md-4">
-                  <h3 class="purple"> Prototype-Onlinebookstore </h3>
-                  <ul>
-                    <p>Course work # CSC350 (Software Development)</p>
-                    <li style="color: aliceblue;">Frontend: HTML, CSS, JavaScript</li>  
-                      <li style="color: aliceblue;">
-                        Backend: PHP</li> 
-                        <li style="color: aliceblue;">
-                          Database: MySQL</li> 
-                  </ul>
-                  <p> Project Scope and Features
-                    The scope of the "BookWorm Haven" project encompasses a range of features designed to create a comprehensive online bookstore experience. The key functionalities include:
-                    <ul>
-                    <li style="color: aliceblue;">User Registration and Login</li>
-                    <li style="color: aliceblue;">Book Samples Display</li>
-                    <li style="color: aliceblue;">Shopping Cart Functionality </li>
-                    <li style="color: aliceblue;">Price Calculation for Purchases </li>
-                    <li style="color: aliceblue;">Users Dashboard Information</li>
-                    <li style="color: aliceblue;">Database Design</li>
-                  </ul>
-                  
-                    
-                    <li style="color: aliceblue;">The database architecture of "BookWorm Haven" is meticulously crafted to ensure secure and efficient data management. The primary components of the database design include:</li>
-                    <ul>
-                    <li style="color: aliceblue;">User Information Database</li>
-                    <li style="color: aliceblue;">Password Encryption</li>
-                    <li style="color: aliceblue;">Database Schema for User Data Storage</li>
-                  </ul>
-                  </p>
-                  <a class="project-link" href="http://lucassummerinternship.000.pe/" target=_blank>Check it out</a>
-                </div>
-              </div>  
-              <div class="user-projects row">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                  <h3 class="purple"> ASD-Q&A Chatbot </h3>
-                  <ul>
-                    <li style="color: aliceblue;">React Frontend:</li> 
-                    <The style="color: aliceblue;">The chatbot interface is built using the React library.</li>
-                      <li style="color: aliceblue;">Axios: Axios is used for making asynchronous HTTP requests to fetch data.</li>
-                      <li style="color: aliceblue;">CSS: Custom styling is applied using CSS for a visually appealing interface.</li>
-                      <li style="color: aliceblue;">Django Backend:</li>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Lucas Yao <span>·</span> Data Science</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+      <nav id="site-nav" class="nav-desktop" aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Stack</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#path">Path</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="btn-header" href="files/Lucas_Resume.pdf" target="_blank" rel="noreferrer">Résumé PDF</a>
+    </div>
+  </header>
 
-                      <li style="color: aliceblue;">The ASD-Q&A Chatbot's backend is built using Django, which serves as the framework handling data management and conversion into API JSON files.</li>
-                  </ul>
-                  <p>
-                    ASD-Q&A Chatbot is a simple chatbot interface that allows users to interact with a question and answer system. The chatbot is designed to provide information based on categories, questions, and answers.</p>
-                  <a class="project-link" href="https://github.com/lucasstranger1/chatbot-project"target=_blank>Check it out</a>
-                </div>
-                <div class="col-md-4">
-                    <img alt="himmat" src="img/Chatbot-interface.png" style="height: 500px;">
-                  </div>
-              </div>  
-              <br>
-            </div>
-            <div class="user-projects row">
-              <div class="col-md-2"></div>
-              <div class="col-md-4">
-                <h3 class="purple">Python &dash; Frequency Analysis </h3>
-                <ul>
-                  <li style="color: aliceblue;">Course related: Cryptography and Cryptanalysis</li>
-                  <li style="color: aliceblue;">a program in C++ or python to compute the relative frequency of all letters A...Z in the ciphertext</li> 
-                  <The style="color: aliceblue;">This project aims to decrypt encrypted texts using the English frequency letter table obtained from a CSV file. The decryption process involves matching the frequencies of letters in the encrypted text with those in the CSV file to identify the corresponding letters. The Python programming language is utilized for implementation.</li>
-                </ul>   
-                <a class="project-link" href="files/Project 1 Report.pdf" target="_blank">Check it out</a>             
-              </div>              
-            </div> 
-            <div class="user-projects row">
-              <div class="col-md-2"></div>
-              <div class="col-md-4">
-                <h3 class="purple">Linux &dash; OpenSSL </h3>
-                <ul>
-                  <li style="color: aliceblue;">Course related: Cryptography and Cryptanalysis</li>
-                  <li style="color: aliceblue;">This project demonstrates practical applications of cryptographic techniques using OpenSSL on Linux systems. Our objectives included exploring symmetric encryption, key generation, message encryption/decryption, and digital signatures. Through a series of tasks, we utilized OpenSSL to manage both symmetric (AES-128-CBC, AES-256-CTR, DES) and asymmetric (RSA 2048-bit) encryption.</li> 
-                  <br>
-                  <The style="color: aliceblue;">We began by creating and sharing public/private key pairs, emphasizing the importance of securing private keys with encryption. The project involved:</li>
-                    <ul>
-                      <li style="color: aliceblue;">Symmetric Encryption: Testing AES-128-CBC and AES-256-CTR algorithms for encrypting and decrypting messages, including performance benchmarking.</li>
-                      <li style="color: aliceblue;">Asymmetric Encryption: Generating RSA key pairs, encrypting messages with public keys, and decrypting with private keys. We exchanged encrypted messages to verify the process.</li> 
-                      <Digital style="color: aliceblue;">Digital Signatures: Signing and verifying messages to ensure authenticity and integrity using OpenSSL's RSA utility.</li> 
-                      
-                    </ul>
-                </ul>  
-                <a class="project-link" href="files/Project2_360 .pdf" target="_blank">Check it out</a>                
-              </div>    
-              <div class="user-projects row">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                  <h3 class="purple">Linux &dash; Secure Communication Using OpenSSL and Certificate Authority </h3>
-                  <ul>
-                    <li style="color: aliceblue;">Course related: Cryptography and Cryptanalysis</li>
-                    <li style="color: aliceblue;">This project focuses on establishing a secure communication channel using OpenSSL and the Certificate Authority (CA) method. The primary objective was to ensure confidentiality, integrity, and authentication in the message exchange between two entities, Ron (Alice) and Lucas (Bob).</li> 
-                    <br>
-                    <The style="color: aliceblue;">The project involved the following key steps:</li>
-                      <ul>
-                        <li style="color: aliceblue;">Key Generation: Each participant generated their own RSA public and private key pairs. Additionally, keys were generated for the CA to facilitate certificate creation and verification.</li>
-                        <li style="color: aliceblue;">Certificate Creation: Both participants created and signed their certificates using the CA, adding an extra layer of trust and authentication.</li> 
-                        <li style="color: aliceblue;">Message Encryption and Decryption: Messages were encrypted with the sender's private key and decrypted using the recipient's public key, ensuring secure transmission. Symmetric keys were also utilized for encrypting larger messages, with the symmetric keys themselves being encrypted using RSA keys.</li> 
-                        <li style="color: aliceblue;">Verification and Integrity Checks: Certificates were exchanged and verified to authenticate the identities of both parties, preventing unauthorized access and ensuring message integrity.</li>
-                      </ul>
-                  </ul>       
-                  <a class="project-link" href="files/Openssl_Project3.pdf" target="_blank">Check it out</a>             
-                </div>           
-            </div>  
-            <br>
-          </div>
-            <br>
-          <h1 class="project-heading" style="text-align: center;">
-            My Recent <strong class="purple">Work </strong> is
-          </h1>
-          <p style="color: white; text-align: center;">Researching with one of faculty professor on "AI ML to enhance security systems - IOT IOM 
-            IIOT system "</p>
-          
+  <main style="padding-top: 1rem;">
+    <p class="back-row"><a href="index.html#projects">← Back to main portfolio</a></p>
+    <p class="section-label">Archive</p>
+    <h1 style="margin-top: 0;">Coursework &amp; earlier builds</h1>
+    <p class="projects-intro">Shorter descriptions for security, systems, and web assignments—links go to demos, posters, or repos.</p>
+
+    <div class="more-list">
+      <div class="more-item reveal">
+        <h3>BMCC tutoring matcher</h3>
+        <p>C++ · Qt · CSC211 — tutor matching UI for STEM students.</p>
+        <div class="project-links">
+          <a href="https://sites.google.com/view/csc211honorproject?usp=sharing" target="_blank" rel="noreferrer">Project site</a>
         </div>
-    </div>
-  </section>
-  <div class="container-fluid footer">
-    <div class="row">
-      <div class="col-md-4 footer-copywright">
       </div>
-      <div class="col-md-4 footer-copywright">
-        <h3>Coded with <i class="fa fa-heart"></i> by <a
-              href="https://github.com/lucasstranger1"
-              style="color: white">Lucas Yao </a></h3>
+      <div class="more-item reveal">
+        <h3>Prototype online bookstore</h3>
+        <p>CSC350 — PHP, MySQL, cart and registration flow.</p>
+        <div class="project-links">
+          <a href="http://lucassummerinternship.000.pe/" target="_blank" rel="noreferrer">Live demo</a>
+        </div>
+      </div>
+      <div class="more-item reveal">
+        <h3>ASD Q&amp;A chatbot</h3>
+        <p>React · Django · category Q&amp;A interface.</p>
+        <div class="project-links">
+          <a href="https://github.com/lucasstranger1/chatbot-project" target="_blank" rel="noreferrer">Repository</a>
+        </div>
+      </div>
+      <div class="more-item reveal">
+        <h3>Frequency analysis (crypto)</h3>
+        <p>Letter-frequency decryption from ciphertext.</p>
+        <div class="project-links">
+          <a href="files/Project%201%20Report.pdf" target="_blank" rel="noreferrer">Report PDF</a>
+        </div>
+      </div>
+      <div class="more-item reveal">
+        <h3>OpenSSL labs</h3>
+        <p>Symmetric/asymmetric crypto and digital signatures on Linux.</p>
+        <div class="project-links">
+          <a href="files/Project2_360%20.pdf" target="_blank" rel="noreferrer">Report PDF</a>
+          <a href="files/Openssl_Project3.pdf" target="_blank" rel="noreferrer">Project 3 PDF</a>
         </div>
       </div>
     </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Lucas Yao · <a href="index.html">Home</a></p>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="js/portfolio.js"></script>
 </body>
-
 </html>
