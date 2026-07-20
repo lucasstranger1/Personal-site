@@ -86,7 +86,7 @@
             I am an M.S. Data Science student at <strong style="color: var(--text);">New York University</strong> (expected May 2027) with a B.S. in Computer Science &amp; Information Security and a mathematics minor from <strong style="color: var(--text);">John Jay College (CUNY)</strong>, May 2025.
           </p>
           <p>
-            Recent work includes a multimodal benchmark (MathLABS), large-scale survey analytics (RateMyProfessor), and full-stack apps with Streamlit and Django. Outside the terminal: volleyball, pickleball, and trails.
+            Recent work spans distributed recommender systems on Spark, controlled ML benchmarks for building energy, and a multimodal math benchmark (MathLABS). Outside the terminal: volleyball, pickleball, and trails.
           </p>
         </div>
       </div>
@@ -101,14 +101,14 @@
       <p class="projects-intro">Ordered for how I actually build: from raw tables to deployed interfaces.</p>
       <div class="skill-cloud reveal">
         <span class="skill-pill"><strong>Python</strong> · pandas · scikit-learn</span>
-        <span class="skill-pill"><strong>Stats</strong> · hypothesis tests · regression</span>
-        <span class="skill-pill"><strong>ML</strong> · classification · evaluation</span>
+        <span class="skill-pill"><strong>Spark</strong> · MLlib · ALS · MinHash LSH</span>
+        <span class="skill-pill"><strong>Big data</strong> · HDFS · Parquet · Dataproc</span>
+        <span class="skill-pill"><strong>ML</strong> · trees · LSTM · ablation</span>
+        <span class="skill-pill"><strong>Stats</strong> · ranking metrics · evaluation</span>
         <span class="skill-pill"><strong>SQL</strong> · MySQL · SQLite</span>
         <span class="skill-pill"><strong>MongoDB</strong> · JSON pipelines</span>
         <span class="skill-pill"><strong>APIs</strong> · REST · model routers</span>
-        <span class="skill-pill"><strong>Streamlit</strong> · quick UIs</span>
-        <span class="skill-pill"><strong>Django</strong> · web backends</span>
-        <span class="skill-pill"><strong>C++</strong> · structures &amp; algorithms</span>
+        <span class="skill-pill"><strong>Streamlit</strong> · Django</span>
         <span class="skill-pill"><strong>Git</strong> · Linux · VS Code</span>
       </div>
     </section>
@@ -116,12 +116,27 @@
     <section id="projects">
       <p class="section-label">Projects</p>
       <h2>Selected work</h2>
-      <p class="projects-intro">Research-style benchmarks, applied statistics, and shipping products. Each card links out to code, a live app, or a written report.</p>
+      <p class="projects-intro">Aligned with the Fall 2026 résumé: big-data recommender systems, controlled ML experiments, and multimodal evaluation. Older builds live in the archive.</p>
 
       <div class="project-grid">
         <article class="project-card reveal">
+          <h3>Goodreads RecSys &amp; Market Segmentation</h3>
+          <p class="project-meta">Big Data Capstone · Spark · Jan–May 2026</p>
+          <p>876K users / 223M rows on HDFS Dataproc (CSV → Parquet). MinHash LSH for top-100 book similarity pairs; ALS with Spark MLlib ranking metrics and implicit signals (is_read, is_reviewed).</p>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>Predicting Building Energy Consumption</h3>
+          <p class="project-meta">Controlled ML comparison · ASHRAE · Jan–May 2026</p>
+          <p>10 methods across 4 families on 20.2M rows with fixed features/splits. Feature ablation: lag/rolling drop hurt trees 400–615% vs. 8–12% for linear models. Global LSTM (168h lookback) over 970 meters ranked third overall.</p>
+          <div class="project-links">
+            <a href="files/Building_Energy_Consumption_Final_Report.pdf" target="_blank" rel="noreferrer">Final report</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
           <h3>MathLABS</h3>
-          <p class="project-meta">Small data · MLLM benchmark · Fall 2025</p>
+          <p class="project-meta">Small data · MLLM benchmark · Sep–Dec 2025</p>
           <p>400+ visual discrete-math items, MongoDB + Hugging Face pipeline, hybrid evaluator with Gemini and OpenRouter—nine VLMs on math MCQs.</p>
           <div class="project-links">
             <a href="files/MathLABS_Final_Report.pdf" target="_blank" rel="noreferrer">Final report</a>
@@ -129,54 +144,16 @@
         </article>
 
         <article class="project-card reveal">
-          <h3>RateMyProfessor Analytics</h3>
-          <p class="project-meta">IDS capstone · 18k+ ratings</p>
-          <p>Welch’s t-tests on gender vs. difficulty, logistic regression on “hotness” (AUROC 0.80), 26+ feature drivers.</p>
-          <div class="project-links">
-            <a href="files/RateMyProfessor_Analytics_Final_Report.pdf" target="_blank" rel="noreferrer">Final report</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <h3>PlantID Care Companion</h3>
-          <p class="project-meta">Streamlit · PlantNet · LLM chat</p>
-          <p>Species ID from photos, fuzzy-matched care guides, character-driven plant chat.</p>
-          <div class="project-links">
-            <a href="https://github.com/lucasstranger1/streamlit_CTP" target="_blank" rel="noreferrer">Repository</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <h3>NLP · Phishing &amp; spam</h3>
-          <p class="project-meta">Streamlit · ML · capstone</p>
-          <p>Content-level classification beyond brittle keyword rules.</p>
-          <div class="project-links">
-            <a href="https://phishingemaildetection-aecdxumf52qcuwtcvgzjn5.streamlit.app/" target="_blank" rel="noreferrer">Live app</a>
-            <a href="img/CSCI_401_Poster.pdf" target="_blank" rel="noreferrer">Poster</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
           <h3>BMCConnect</h3>
-          <p class="project-meta">Django · curriculum &amp; chat · BMCC TLC</p>
-          <p>Search, live support, and analytics for ~1,500 CIS students.</p>
+          <p class="project-meta">Django · BMCC Technology Learning Community</p>
+          <p>Curriculum search, live chat, and analytics for ~1,500 CIS students.</p>
           <div class="project-links">
             <a href="https://lucasyao111.pythonanywhere.com/" target="_blank" rel="noreferrer">Live site</a>
-            <a href="https://lucasstranger1.github.io/BMCCintership/index.html#" target="_blank" rel="noreferrer">Static demo</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <h3>Emotionfy</h3>
-          <p class="project-meta">React · Flask · Spotify API</p>
-          <p>Facial emotion cues mapped to playlist recommendations.</p>
-          <div class="project-links">
-            <a href="https://github.com/walletkun/Emotionfy" target="_blank" rel="noreferrer">Repository</a>
           </div>
         </article>
       </div>
       <p class="projects-intro" style="margin-top: 2rem; margin-bottom: 0;">
-        <a href="projects.html">Coursework &amp; lab archive →</a> — cryptography write-ups, Qt project, bookstore demo, chatbot repo.
+        <a href="projects.html">More projects &amp; lab archive →</a> — RateMyProfessor Analytics, PlantID, phishing NLP, Emotionfy, and coursework.
       </p>
     </section>
 
@@ -189,7 +166,7 @@
           <div class="timeline-item">
             <h4>M.S. Data Science · NYU</h4>
             <p class="when">New York, NY · expected May 2027</p>
-            <p>Coursework: intro DS, optimization &amp; linear algebra, learning from small data, ML, big data, advanced Python.</p>
+            <p>Coursework: intro DS, optimization &amp; linear algebra, learning from small data, ML, big data, advanced Python, visualization for ML, NLP.</p>
           </div>
           <div class="timeline-item">
             <h4>B.S. CS &amp; Information Security · John Jay (CUNY)</h4>
